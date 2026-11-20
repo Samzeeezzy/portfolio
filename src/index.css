@@ -56,3 +56,27 @@ button{font:inherit}
 .whatsapp-contact{color:#62ed9a!important;border:1px solid #36d87955;padding:9px 11px}
 .contact-location{display:flex;align-items:center;gap:8px;color:#aeb9c7;font:10px 'DM Mono',monospace}
 @media(max-width:650px){.header-actions{gap:7px}.header-whatsapp{font-size:0;padding:10px}.header-whatsapp svg{width:17px;height:17px}.search-toggle{width:36px;height:36px}.site-search{padding:13px 6%}}
+
+
+/* Full-stack profile, online teaching and visual journal */
+.tutor-panel{display:grid;grid-template-columns:58px 1fr;gap:22px;align-items:start;margin-top:28px;padding:30px;border:1px solid #a3ff6f35;background:linear-gradient(120deg,#a3ff6f0d,#101a27 65%);position:relative;overflow:hidden}
+.tutor-icon{width:52px;height:52px;display:grid;place-items:center;background:#a3ff6f16;border:1px solid #a3ff6f66;color:#a3ff6f}
+.tutor-kicker{font:9px 'DM Mono',monospace;letter-spacing:.16em;color:#a3ff6f}
+.tutor-panel h3{font-size:clamp(21px,3vw,30px);letter-spacing:-.04em;margin:12px 0}
+.tutor-panel p{max-width:760px;color:#aab6c5;font-size:13px;line-height:1.9;margin-bottom:18px}
+.gallery-section{padding-top:100px}
+.gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px}
+.gallery-tile{min-width:0}
+.gallery-feature{grid-row:span 2}
+.gallery-placeholder{height:220px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 30%,#a3ff6f35,transparent 35%),linear-gradient(135deg,#172b2b,#0b111b);border:1px solid #ffffff20}
+.gallery-feature .gallery-placeholder{height:458px;background:radial-gradient(circle at 65% 35%,#a3ff6f42,transparent 30%),linear-gradient(145deg,#243b35,#0a1018 72%)}
+.gallery-placeholder:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #a3ff6f55;border-radius:50%;right:-70px;bottom:-95px;box-shadow:0 0 0 25px #a3ff6f08,0 0 0 55px #a3ff6f06}
+.gallery-placeholder span,.gallery-placeholder small{font:9px 'DM Mono',monospace;letter-spacing:.12em;color:#a3ff6f;position:relative;z-index:1}
+.gallery-placeholder strong{font-size:clamp(27px,4vw,48px);line-height:.95;letter-spacing:-.06em;position:relative;z-index:1}
+.gallery-feature .gallery-placeholder strong{font-size:clamp(45px,6vw,78px)}
+.gallery-code{background:radial-gradient(circle at 75% 25%,#4b83ce45,transparent 35%),linear-gradient(140deg,#15243a,#0a1018)}
+.gallery-teach{background:radial-gradient(circle at 75% 25%,#c5a15a45,transparent 35%),linear-gradient(140deg,#302718,#0a1018)}
+.gallery-brand{background:radial-gradient(circle at 75% 25%,#b47bce45,transparent 35%),linear-gradient(140deg,#2c1d39,#0a1018)}
+.gallery-tile>p{font:9px 'DM Mono',monospace;color:#8492a4;margin-top:10px;letter-spacing:.04em}
+.gallery-note{font-size:11px;color:#8492a4;margin-top:24px}
+@media(max-width:650px){.tutor-panel{grid-template-columns:1fr;padding:22px;gap:14px}.gallery-grid{grid-template-columns:1fr 1fr;gap:12px}.gallery-feature{grid-row:auto;grid-column:span 2}.gallery-feature .gallery-placeholder{height:300px}.gallery-placeholder{height:190px;padding:15px}.gallery-placeholder strong{font-size:28px}.gallery-feature .gallery-placeholder strong{font-size:52px}}
