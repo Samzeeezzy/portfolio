@@ -186,9 +186,9 @@ function App() {
             <motion.div className="about-portrait-wrap" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}><img src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/.trashed-1787055240-file_00000000a8d871f4ae0cc4a13116c88e.png" alt="Samuel Ezekiel portrait" className="about-portrait" /><span>THE PERSON BEHIND THE PIXELS</span></motion.div>
             <motion.h2 variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>Curiosity<br />made me a<br /><span className="green-text">creator.</span></motion.h2>
             <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="about-copy">
-              <p className="large-copy">I’m Samuel Naanyoung Ezekiel — a full-stack developer, digital tutor and technology entrepreneur passionate about turning ideas into useful digital products.</p>
+              <p className="large-copy">I’m Samuel Naanyoung Ezekiel — a full-stack developer, ICT teacher, digital tutor and technology entrepreneur passionate about technology, education and turning ideas into useful digital products.</p>
               <p>My journey is driven by a simple belief: technology should do more than look impressive. It should solve problems, connect people and create opportunities. I enjoy exploring how design and code can work together to make that happen.</p>
-              <p>Alongside my individual work, I lead <strong>SamKonceptz Enterprise</strong>. I also teach web development through online classes, helping learners build practical skills, understand the web and grow their confidence in technology.</p>
+              <p>Alongside my individual work, I lead <strong>SamKonceptz Enterprise</strong>. As an ICT teacher, I help learners build digital literacy, understand information and communication technology, and use digital tools confidently. I also teach web development through online classes, helping aspiring developers gain practical skills and grow their confidence in technology.</p>
               <a href="#contact" className="inline-arrow">LET’S CREATE SOMETHING <ArrowUpRight size={16} /></a>
             </motion.div>
           </div>
@@ -203,7 +203,7 @@ function App() {
           <SectionLabel number="02">WHAT I BRING</SectionLabel>
           <div className="section-heading-row">
             <h2>Ideas into<br /><span className="green-text">interfaces.</span></h2>
-            <p className="section-intro">I work across the full development process — from crafting responsive user interfaces to building backend functionality, connecting APIs and working with data. I also share what I know through practical online web development classes.</p>
+            <p className="section-intro">I work across the full development process — from crafting responsive user interfaces to building backend functionality, connecting APIs and working with data. As an ICT teacher and digital tutor, I also make technology easier to understand through practical instruction and online web development classes.</p>
           </div>
           <div className="skills-grid">
             {skills.map(({ name, level, icon: Icon }, i) => (
@@ -215,7 +215,7 @@ function App() {
             ))}
           </div>
           <div className="capability-note"><Zap size={17} /><span>Frontend + Backend development · Full-stack thinking · Practical problem solving</span></div>
-          <div className="tutor-panel"><div className="tutor-icon"><Lightbulb size={23} /></div><div><span className="tutor-kicker">DIGITAL TUTOR · ONLINE LEARNING</span><h3>Learn web development with practical guidance.</h3><p>I offer online web development classes designed to help beginners and aspiring developers understand how websites are planned, designed and built. Learn step by step, practise with real projects and develop skills you can keep growing.</p><a href="https://wa.me/2347068860965?text=Hello%20Samuel%2C%20I%27m%20interested%20in%20your%20online%20web%20development%20classes." target="_blank" rel="noreferrer" className="inline-arrow">ENQUIRE ABOUT ONLINE CLASSES <ArrowUpRight size={16} /></a></div></div>
+          <div className="tutor-panel"><div className="tutor-icon"><Lightbulb size={23} /></div><div><span className="tutor-kicker">ICT TEACHER · DIGITAL TUTOR · ONLINE LEARNING</span><h3>Learn technology and web development with practical guidance.</h3><p>As an ICT teacher and digital tutor, I help learners develop digital literacy and practical technology skills. I also offer online web development classes designed to help beginners understand how websites are planned, designed and built. Learn step by step, practise with real projects and keep growing.</p><a href="https://wa.me/2347068860965?text=Hello%20Samuel%2C%20I%27m%20interested%20in%20your%20online%20web%20development%20classes." target="_blank" rel="noreferrer" className="inline-arrow">ENQUIRE ABOUT ONLINE CLASSES <ArrowUpRight size={16} /></a></div></div>
         </section>
 
         <section id="projects" className="section-wrap content-section projects-section">
