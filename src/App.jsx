@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Menu, X,
+  ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Phone, MapPin, Menu, X,
   Code2, Layers3, Lightbulb, MonitorSmartphone, Sparkles, Terminal,
   Globe2, Zap, ExternalLink
 } from 'lucide-react'
@@ -234,8 +234,10 @@ function App() {
               <span className="contact-kicker">START A CONVERSATION</span>
               <a className="contact-email" href="mailto:sezekiel949@gmail.com">Let’s talk <ArrowUpRight size={22} /></a>
               <div className="contact-links">
-                <a href="https://github.com/Samzeeezzy" target="_blank" rel="noreferrer"><Github size={17} /> GitHub <ArrowUpRight size={13} /></a>
+                <a href="tel:+2347068860965"><Phone size={17} /> +234 706 886 0965 <ArrowUpRight size={13} /></a>
                 <a href="mailto:sezekiel949@gmail.com"><Mail size={17} /> Email <ArrowUpRight size={13} /></a>
+                <a href="https://github.com/Samzeeezzy" target="_blank" rel="noreferrer"><Github size={17} /> GitHub <ArrowUpRight size={13} /></a>
+                <span className="contact-location"><MapPin size={17} /> Abuja, Nigeria</span>
               </div>
             </div>
           </div>
