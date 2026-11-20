@@ -117,7 +117,7 @@ function App() {
   const closeMenu = () => setMenuOpen(false)
 
   const nav = [
-    ['About', '#about'], ['Expertise', '#expertise'], ['Projects', '#projects'], ['Contact', '#contact'],
+    ['About', '#about'], ['Expertise', '#expertise'], ['Projects', '#projects'], ['Gallery', '#gallery'], ['Contact', '#contact'],
   ]
 
   return (
