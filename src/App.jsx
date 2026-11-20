@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Phone, MapPin, Menu, X,
+  ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Phone, MapPin, Menu, X, Search, MessageCircle,
   Code2, Layers3, Lightbulb, MonitorSmartphone, Sparkles, Terminal,
   Globe2, Zap, ExternalLink
 } from 'lucide-react'
@@ -89,6 +89,9 @@ function SectionLabel({ children, number }) {
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
+  const filteredProjects = projects.filter(project => `${project.name} ${project.type} ${project.description} ${project.stack.join(' ')}`.toLowerCase().includes(searchQuery.toLowerCase()))
   const closeMenu = () => setMenuOpen(false)
 
   const nav = [
@@ -109,12 +112,21 @@ function App() {
         <nav className="hidden md:flex items-center gap-8">
           {nav.map(([label, href]) => <a key={label} className="nav-link" href={href}>{label}</a>)}
         </nav>
-        <a href="#contact" className="header-cta hidden md:inline-flex">LET’S TALK <ArrowUpRight size={14} /></a>
+        <div className="header-actions">
+          <button className="search-toggle" onClick={() => { setSearchOpen(!searchOpen); setSearchQuery('') }} aria-label="Search projects" aria-expanded={searchOpen}><Search size={17} /></button>
+          <a href="https://wa.me/2347068860965?text=Hello%20Samuel%2C%20I%20visited%20your%20portfolio." target="_blank" rel="noreferrer" className="header-whatsapp"><MessageCircle size={15} /> WHATSAPP</a>
+          <a href="#contact" className="header-cta hidden md:inline-flex">LET’S TALK <ArrowUpRight size={14} /></a>
+        </div>
         <button className="mobile-menu md:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           {menuOpen ? <X /> : <Menu />}
         </button>
       </header>
 
+      {searchOpen && <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="site-search">
+        <Search size={17} />
+        <input autoFocus value={searchQuery} onChange={event => setSearchQuery(event.target.value)} onKeyDown={event => { if (event.key === 'Escape') setSearchOpen(false); if (event.key === 'Enter') document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }) }} placeholder="Search projects, skills or technologies..." aria-label="Search projects" />
+        <button onClick={() => { setSearchQuery(''); setSearchOpen(false) }} aria-label="Close search"><X size={17} /></button>
+      </motion.div>}
       {menuOpen && <motion.nav initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="mobile-nav md:hidden">
         {nav.map(([label, href]) => <a key={label} href={href} onClick={closeMenu}>{label}<ArrowUpRight size={15} /></a>)}
       </motion.nav>}
@@ -195,7 +207,7 @@ function App() {
             <p className="section-intro">A selection of projects and digital experiences from my ongoing journey of learning, building and creating.</p>
           </div>
           <div className="projects-grid">
-            {projects.map((project, i) => (
+            {filteredProjects.map((project, i) => (
               <motion.a href={project.url} target="_blank" rel="noreferrer" key={project.number} className="project-card" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: (i % 2) * .08 }}>
                 <div className={`project-visual visual-${project.tone}`}>
                   <div className="visual-top"><span>PROJECT / {project.number}</span><ExternalLink size={15} /></div>
@@ -212,6 +224,7 @@ function App() {
               </motion.a>
             ))}
           </div>
+          {filteredProjects.length === 0 && <p className="search-empty">No projects match “{searchQuery}”. Try another keyword.</p>}
           <div className="github-callout">
             <div><Github size={22} /><div><strong>More experiments on GitHub</strong><span>Follow the code, not just the screenshots.</span></div></div>
             <a href="https://github.com/Samzeeezzy" target="_blank" rel="noreferrer" className="button-outline">VISIT GITHUB <ArrowUpRight size={15} /></a>
@@ -235,6 +248,7 @@ function App() {
               <a className="contact-email" href="mailto:sezekiel949@gmail.com">Let’s talk <ArrowUpRight size={22} /></a>
               <div className="contact-links">
                 <a href="tel:+2347068860965"><Phone size={17} /> +234 706 886 0965 <ArrowUpRight size={13} /></a>
+                <a href="https://wa.me/2347068860965?text=Hello%20Samuel%2C%20I%20visited%20your%20portfolio." target="_blank" rel="noreferrer" className="whatsapp-contact"><MessageCircle size={17} /> WhatsApp <ArrowUpRight size={13} /></a>
                 <a href="mailto:sezekiel949@gmail.com"><Mail size={17} /> Email <ArrowUpRight size={13} /></a>
                 <a href="https://github.com/Samzeeezzy" target="_blank" rel="noreferrer"><Github size={17} /> GitHub <ArrowUpRight size={13} /></a>
                 <span className="contact-location"><MapPin size={17} /> Abuja, Nigeria</span>
