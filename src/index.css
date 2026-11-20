@@ -80,3 +80,23 @@ button{font:inherit}
 .gallery-tile>p{font:9px 'DM Mono',monospace;color:#8492a4;margin-top:10px;letter-spacing:.04em}
 .gallery-note{font-size:11px;color:#8492a4;margin-top:24px}
 @media(max-width:650px){.tutor-panel{grid-template-columns:1fr;padding:22px;gap:14px}.gallery-grid{grid-template-columns:1fr 1fr;gap:12px}.gallery-feature{grid-row:auto;grid-column:span 2}.gallery-feature .gallery-placeholder{height:300px}.gallery-placeholder{height:190px;padding:15px}.gallery-placeholder strong{font-size:28px}.gallery-feature .gallery-placeholder strong{font-size:52px}}
+
+
+/* Original portfolio photographs and artwork */
+.hero-photo-art{overflow:visible}
+.hero-portrait-frame{position:relative;z-index:2;width:min(82%,390px);height:440px;overflow:hidden;border:1px solid #a3ff6f66;background:#111b27;box-shadow:0 25px 90px #0009,0 0 45px #a3ff6f18}
+.hero-portrait{width:100%;height:100%;display:block;object-fit:cover;object-position:center 20%}
+.hero-photo-art .orbit{z-index:0}
+.hero-photo-art .tag-code{z-index:3;left:-2%}
+.hero-photo-art .tag-idea{z-index:3;right:-2%}
+.about-grid{grid-template-columns:.85fr .8fr 1.35fr;gap:5%;align-items:center}
+.about-portrait-wrap{position:relative;min-width:0}
+.about-portrait{width:100%;height:390px;object-fit:cover;object-position:center 20%;display:block;border:1px solid #a3ff6f55;filter:saturate(.88)}
+.about-portrait-wrap>span{display:block;margin-top:10px;color:#a3ff6f;font:8px 'DM Mono',monospace;letter-spacing:.12em}
+.gallery-image{display:block;width:100%;height:220px;object-fit:cover;object-position:center;border:1px solid #ffffff20;background:#101a27;transition:transform .5s,filter .5s}
+.gallery-feature .gallery-image{height:458px;object-position:center 20%}
+.gallery-artwork{object-fit:contain;padding:8px;background:#101722}
+.gallery-tile:hover .gallery-image{transform:translateY(-4px);filter:brightness(1.08)}
+.gallery-note{display:none}
+@media(max-width:900px){.about-grid{grid-template-columns:.8fr 1fr;gap:7%}.about-portrait-wrap{grid-row:span 2}.about-portrait{height:350px}}
+@media(max-width:650px){.hero-portrait-frame{width:72%;height:300px}.about-grid{grid-template-columns:1fr;gap:24px}.about-portrait-wrap{grid-row:auto}.about-portrait{height:330px;width:min(100%,360px)}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-feature{grid-column:span 2;grid-row:auto}.gallery-image{height:190px}.gallery-feature .gallery-image{height:300px}}
