@@ -171,7 +171,7 @@ function App() {
 
             <motion.div className="hero-art hero-photo-art" initial={{ opacity: 0, scale: .92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, delay: .15 }}>
               <div className="orbit orbit-a" /><div className="orbit orbit-b" />
-              <div className="hero-portrait-frame"><img src="/portfolio/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2001_37_17%20PM.png" alt="Samuel Naanyoung Ezekiel in a black suit" className="hero-portrait" /></div>
+              <div className="hero-portrait-frame"><img src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2001_37_17%20PM.png" alt="Samuel Naanyoung Ezekiel in a black suit" className="hero-portrait" /></div>
               <div className="float-tag tag-code"><Code2 size={14} /> CODE / CREATE</div>
               <div className="float-tag tag-idea"><Lightbulb size={14} /> IDEAS → IMPACT</div>
               <div className="art-coordinate">09°04' N<br />08°40' E</div><div className="art-index">FIG. 001 — THE MAKER</div>
@@ -183,7 +183,7 @@ function App() {
         <section id="about" className="section-wrap content-section">
           <SectionLabel number="01">A LITTLE ABOUT ME</SectionLabel>
           <div className="about-grid">
-            <motion.div className="about-portrait-wrap" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}><img src="/portfolio/.trashed-1787055240-file_00000000a8d871f4ae0cc4a13116c88e.png" alt="Samuel Ezekiel portrait" className="about-portrait" /><span>THE PERSON BEHIND THE PIXELS</span></motion.div>
+            <motion.div className="about-portrait-wrap" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}><img src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/.trashed-1787055240-file_00000000a8d871f4ae0cc4a13116c88e.png" alt="Samuel Ezekiel portrait" className="about-portrait" /><span>THE PERSON BEHIND THE PIXELS</span></motion.div>
             <motion.h2 variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>Curiosity<br />made me a<br /><span className="green-text">creator.</span></motion.h2>
             <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="about-copy">
               <p className="large-copy">I’m Samuel Naanyoung Ezekiel — a full-stack developer, digital tutor and technology entrepreneur passionate about turning ideas into useful digital products.</p>
@@ -257,11 +257,11 @@ function App() {
             <p className="section-intro">A glimpse into the person behind the projects — learning, teaching, creating and building with purpose.</p>
           </div>
           <div className="gallery-grid">
-            <div className="gallery-tile gallery-feature"><img className="gallery-image" src="/portfolio/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2001_37_17%20PM.png" alt="Samuel Ezekiel in a black suit" /><p>01 / Samuel Naanyoung Ezekiel · Profile portrait</p></div>
-            <div className="gallery-tile"><img className="gallery-image" src="/portfolio/.trashed-1787055240-file_00000000a8d871f4ae0cc4a13116c88e.png" alt="Samuel Ezekiel in blue" /><p>02 / A personal portrait</p></div>
-            <div className="gallery-tile"><img className="gallery-image gallery-artwork" src="/portfolio/ChatGPT%20Image%20Oct%206%2C%202026%2C%2001_30_48%20PM.png" alt="SamKonceptz Enterprise official flyer" /><p>03 / SamKonceptz Enterprise · Brand and services</p></div>
-            <div className="gallery-tile"><img className="gallery-image gallery-artwork" src="/portfolio/ChatGPT%20Image%20Sep%204%2C%202026%2C%2010_48_39%20AM.png" alt="SamKonceptz AI creative artwork" /><p>04 / SamKonceptz · AI creative concepts</p></div>
-            <div className="gallery-tile"><img className="gallery-image gallery-artwork" src="/portfolio/ChatGPT%20Image%20Oct%205%2C%202026%2C%2011_31_52%20AM.png" alt="SubNexa product logo" /><p>05 / SubNexa · Digital product concept</p></div>
+            <div className="gallery-tile gallery-feature"><img className="gallery-image" src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/ChatGPT%20Image%20Sep%2029%2C%202026%2C%2001_37_17%20PM.png" alt="Samuel Ezekiel in a black suit" /><p>01 / Samuel Naanyoung Ezekiel · Profile portrait</p></div>
+            <div className="gallery-tile"><img className="gallery-image" src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/.trashed-1787055240-file_00000000a8d871f4ae0cc4a13116c88e.png" alt="Samuel Ezekiel in blue" /><p>02 / A personal portrait</p></div>
+            <div className="gallery-tile"><img className="gallery-image gallery-artwork" src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/ChatGPT%20Image%20Oct%206%2C%202026%2C%2001_30_48%20PM.png" alt="SamKonceptz Enterprise official flyer" /><p>03 / SamKonceptz Enterprise · Brand and services</p></div>
+            <div className="gallery-tile"><img className="gallery-image gallery-artwork" src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/ChatGPT%20Image%20Sep%204%2C%202026%2C%2010_48_39%20AM.png" alt="SamKonceptz AI creative artwork" /><p>04 / SamKonceptz · AI creative concepts</p></div>
+            <div className="gallery-tile"><img className="gallery-image gallery-artwork" src="https://raw.githubusercontent.com/Samzeeezzy/portfolio/main/ChatGPT%20Image%20Oct%205%2C%202026%2C%2011_31_52%20AM.png" alt="SubNexa product logo" /><p>05 / SubNexa · Digital product concept</p></div>
           </div>
         </section>
         <section className="manifesto-section">
