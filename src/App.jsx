@@ -94,7 +94,9 @@ const skills = [
   { name: 'JavaScript', level: 'Interactive experiences', icon: Terminal },
   { name: 'React', level: 'Component-driven UI', icon: Layers3 },
   { name: 'Tailwind CSS', level: 'Modern styling', icon: Sparkles },
-  { name: 'Supabase', level: 'Backend & data', icon: Globe2 },
+  { name: 'Backend development', level: 'Server-side logic & application flow', icon: Globe2 },
+  { name: 'APIs & integrations', level: 'Connecting digital services', icon: Zap },
+  { name: 'Databases & Supabase', level: 'Data, storage & authentication', icon: Layers3 },
   { name: 'Responsive design', level: 'Every screen, every size', icon: MonitorSmartphone },
 ]
 
@@ -189,9 +191,9 @@ function App() {
           <div className="about-grid">
             <motion.h2 variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }}>Curiosity<br />made me a<br /><span className="green-text">creator.</span></motion.h2>
             <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="about-copy">
-              <p className="large-copy">I’m Samuel Naanyoung Ezekiel — a technology enthusiast, frontend developer and entrepreneur passionate about turning ideas into useful digital products.</p>
+              <p className="large-copy">I’m Samuel Naanyoung Ezekiel — a full-stack developer, digital tutor and technology entrepreneur passionate about turning ideas into useful digital products.</p>
               <p>My journey is driven by a simple belief: technology should do more than look impressive. It should solve problems, connect people and create opportunities. I enjoy exploring how design and code can work together to make that happen.</p>
-              <p>Alongside my individual work, I lead <strong>SamKonceptz Enterprise</strong>, where I continue to learn, build and help bring digital ideas to life.</p>
+              <p>Alongside my individual work, I lead <strong>SamKonceptz Enterprise</strong>. I also teach web development through online classes, helping learners build practical skills, understand the web and grow their confidence in technology.</p>
               <a href="#contact" className="inline-arrow">LET’S CREATE SOMETHING <ArrowUpRight size={16} /></a>
             </motion.div>
           </div>
@@ -206,7 +208,7 @@ function App() {
           <SectionLabel number="02">WHAT I BRING</SectionLabel>
           <div className="section-heading-row">
             <h2>Ideas into<br /><span className="green-text">interfaces.</span></h2>
-            <p className="section-intro">A growing toolkit for designing, developing and delivering digital experiences that feel clear, useful and memorable.</p>
+            <p className="section-intro">I work across the full development process — from crafting responsive user interfaces to building backend functionality, connecting APIs and working with data. I also share what I know through practical online web development classes.</p>
           </div>
           <div className="skills-grid">
             {skills.map(({ name, level, icon: Icon }, i) => (
@@ -217,7 +219,8 @@ function App() {
               </motion.div>
             ))}
           </div>
-          <div className="capability-note"><Zap size={17} /><span>Always experimenting. Always improving. Always building.</span></div>
+          <div className="capability-note"><Zap size={17} /><span>Frontend + Backend development · Full-stack thinking · Practical problem solving</span></div>
+          <div className="tutor-panel"><div className="tutor-icon"><Lightbulb size={23} /></div><div><span className="tutor-kicker">DIGITAL TUTOR · ONLINE LEARNING</span><h3>Learn web development with practical guidance.</h3><p>I offer online web development classes designed to help beginners and aspiring developers understand how websites are planned, designed and built. Learn step by step, practise with real projects and develop skills you can keep growing.</p><a href="https://wa.me/2347068860965?text=Hello%20Samuel%2C%20I%27m%20interested%20in%20your%20online%20web%20development%20classes." target="_blank" rel="noreferrer" className="inline-arrow">ENQUIRE ABOUT ONLINE CLASSES <ArrowUpRight size={16} /></a></div></div>
         </section>
 
         <section id="projects" className="section-wrap content-section projects-section">
@@ -251,6 +254,21 @@ function App() {
           </div>
         </section>
 
+
+        <section id="gallery" className="section-wrap content-section gallery-section">
+          <SectionLabel number="04">BEYOND THE SCREEN</SectionLabel>
+          <div className="section-heading-row">
+            <h2>A visual<br /><span className="green-text">journal.</span></h2>
+            <p className="section-intro">A glimpse into the person behind the projects — learning, teaching, creating and building with purpose.</p>
+          </div>
+          <div className="gallery-grid">
+            <div className="gallery-tile gallery-feature"><div className="gallery-placeholder"><span>01 / PORTRAIT</span><strong>THE<br/>CREATOR.</strong><small>Samuel Naanyoung Ezekiel</small></div><p>Professional portrait · Main profile image</p></div>
+            <div className="gallery-tile"><div className="gallery-placeholder gallery-code"><span>02 / DEVELOPMENT</span><strong>IDEAS<br/>INTO CODE.</strong><small>Building digital experiences</small></div><p>Behind the build · Development work</p></div>
+            <div className="gallery-tile"><div className="gallery-placeholder gallery-teach"><span>03 / EDUCATION</span><strong>LEARN.<br/>BUILD. GROW.</strong><small>Online web development classes</small></div><p>Digital tutoring · Sharing knowledge</p></div>
+            <div className="gallery-tile"><div className="gallery-placeholder gallery-brand"><span>04 / ENTREPRENEURSHIP</span><strong>BUILDING<br/>WITH PURPOSE.</strong><small>SamKonceptz Enterprise</small></div><p>Entrepreneurship · Creative work</p></div>
+          </div>
+          <p className="gallery-note">Personal photos and original project images will appear here once added to the gallery.</p>
+        </section>
         <section className="manifesto-section">
           <div className="manifesto-inner">
             <span className="manifesto-kicker">A NOTE TO THE FUTURE</span>
@@ -260,7 +278,7 @@ function App() {
         </section>
 
         <section id="contact" className="section-wrap content-section contact-section">
-          <SectionLabel number="04">HAVE AN IDEA?</SectionLabel>
+          <SectionLabel number="05">HAVE AN IDEA?</SectionLabel>
           <div className="contact-layout">
             <div><h2>Let’s make<br />it <span className="green-text">happen.</span></h2><p className="contact-intro">Have a project, opportunity or interesting idea? I’d love to hear what you’re thinking.</p></div>
             <div className="contact-panel">
